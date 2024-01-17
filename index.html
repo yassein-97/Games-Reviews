@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!----------------------------- start header ----------------------------->
+    <header>
+        <img class="home-image" src="images/wraper.png" alt="bg-image">
+        
+    </header>
+    <!----------------------------- end header ------------------------------->
+
+    <!----------------------------- start navbar ----------------------------->
+        <div class="container sticky-top mb-5 pb-4 ">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light rounded-4 position-absolute ">
+                    <!-- <div class="container mx-md-5 rounded-4 p-2"> -->
+                    <div class="container rounded-4 ">
+                        <div class="d-flex ">
+                            <div class="w-15 me-1">
+                                <img src="images/logo-sm.png" class="w-100" alt="website-icon">
+                            </div>
+                            <h5 class="navbar-brand" href="#">GAME REVIEWS</h5>
+                        </div>
+                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item d-none">
+                                    <a id="mmorpg" class="nav-link active" href="#" aria-current="page">All</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="mmorpg" class="nav-link" href="#" aria-current="page">MMORPG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="shooter" class="nav-link" href="#">SHOOTER</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="sailing" class="nav-link" href="#">SAILING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="permadeath" class="nav-link" href="#">PERMADEATH</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="superhero" class="nav-link" href="#">SUPERHERO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="pixel" class="nav-link" href="#">PIXEL</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <!----------------------------- end navbar ------------------------------->
+
+    <!----------------------------- start home ------------------------------->
+    <section class="home pt-5 mb-4 " id="home">
+        <div class="container">
+            <div class="spinner mx-auto d-none"></div>
+            <div id="show" class="row gy-4">
+            </div>
+        </div>
+    </section>
+    <!----------------------------- end home --------------------------------->
+    <!----------------------------- start model ------------------------------>
+    <section class="model d-none overflow-auto pb-4" id="model">
+        <div class="container">
+            <div class="spinner spinner-model  mx-auto d-none"></div>
+            <div id="show-details" class="row gy-3">
+            </div>
+            
+        </div>
+    </section>
+    <!----------------------------- end model -------------------------------->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
