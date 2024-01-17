@@ -31,7 +31,7 @@ function showgameDetails(game){
     </div>
     <div class="col-md-4">
         <div>
-            <img class="w-100 model-img" src="${game.thumbnail}" alt="test">
+            <img class="w-100 model-img" src="${game.thumbnail}" alt="${game.title}">
         </div>
     </div>
     <div class="col-md-8">

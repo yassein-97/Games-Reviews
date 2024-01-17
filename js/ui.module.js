@@ -52,7 +52,7 @@ export function showData(gamesList){
         <div class="col-xl-3 col-lg-4 col-md-6">
                     <div data-game-id=${gamesList[i].id} class="game-card rounded-2 text-white position-relative cursor-pointer">
                         <div data-game-id=${gamesList[i].id} class="m-3 overflow-hidden game-card-content">
-                            <img data-game-id=${gamesList[i].id} class="w-100 game-card-image" src="${gamesList[i].thumbnail}" alt="test">
+                            <img data-game-id=${gamesList[i].id} class="w-100 game-card-image" src="${gamesList[i].thumbnail}" alt="${gamesList[i].title}">
                             <div data-game-id=${gamesList[i].id} class="d-flex justify-content-between align-items-center">
                                 <h3 data-game-id=${gamesList[i].id} class="game-card-header mt-3">${gamesList[i].title}</h3>
                                 <span data-game-id=${gamesList[i].id} class="free-btn btn">Free</span>
