@@ -1,10 +1,10 @@
 const showDetails = document.querySelector('#show-details');
-const spinner = document.querySelector('.model .container .spinner');
+const loader = document.querySelector('.model .container .loader');
 
 
 // get details for a game by id
 export async function getGameDetailsById(id){
-    spinner.classList.remove('d-none');
+    loader.classList.remove('d-none');
     showDetails.classList.add('d-none');
     const request = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`,{
         method: 'GET',
@@ -16,7 +16,7 @@ export async function getGameDetailsById(id){
     if(request.status == 200){
         const result = await request.json();
         showgameDetails(result);
-        spinner.classList.add('d-none');
+        loader.classList.add('d-none');
         showDetails.classList.remove('d-none');
     };
 };

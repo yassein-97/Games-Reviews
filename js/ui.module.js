@@ -1,10 +1,10 @@
 const show = document.querySelector('#show');
-const spinner = document.querySelector('.spinner');
+const loader = document.querySelector('.loader');
 
 
 // get all games
 export async function getData() {
-    spinner.classList.remove('d-none');
+    loader.classList.remove('d-none');
     show.classList.add('d-none');
   const request = await fetch("https://free-to-play-games-database.p.rapidapi.com/api/games",
     {
@@ -18,14 +18,14 @@ export async function getData() {
   if(request.status == 200){
     const result = await request.json();
     showData(result);
-    spinner.classList.add('d-none');
+    loader.classList.add('d-none');
     show.classList.remove('d-none');
   };
 };
 
 // get games by category name
 export async function getDataByType(type){
-    spinner.classList.remove('d-none');
+    loader.classList.remove('d-none');
     show.classList.add('d-none');
     const request = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/games?category=${type}`,{
         method: 'GET',
@@ -38,7 +38,7 @@ export async function getDataByType(type){
         const result = await request.json();
         showData(result);
         // console.log(result);
-        spinner.classList.add('d-none');
+        loader.classList.add('d-none');
         show.classList.remove('d-none');
     };
 };
