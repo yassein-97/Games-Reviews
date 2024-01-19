@@ -199,14 +199,7 @@ body{
     color: white;
 }
 
-/*spinner*/
-.spinner-model{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-} 
-
+/*loader*/
 .loader {
     width: 150px;
     height: 150px;
